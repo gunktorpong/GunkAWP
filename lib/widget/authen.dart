@@ -20,12 +20,21 @@ class _AuthenState extends State<Authen> {
               buildContainer(),
               buildText(),
               buildContainerUser(),
-              buildContainerPassword()
+              buildContainerPassword(),
+              buildLogin(),
             ],
           ),
         ),
       ),
     );
+  }
+
+  Container buildLogin() {
+    return Container(
+              margin: EdgeInsets.only(top: 16),
+              width: 250,
+              child: RaisedButton(onPressed: null),
+            );
   }
 
   Container buildContainerUser() {
